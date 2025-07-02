@@ -19,10 +19,10 @@ output_details = interpreter.get_output_details()
 # Label dan rekomendasi
 labels = ['Hawar Daun', 'Karat Daun', 'Daun Sehat', 'Thrips']
 recommendations = {
-    'Hawar Daun': "Sanitasi lahan, pengaturan jarak tanam, dan penyemprotan fungisida seperti mancozeb.",
-    'Karat Daun': "Gunakan mulsa, rotasi tanaman, dan fungisida seperti propikonazol.",
+    'Hawar Daun': "Sanitasi lahan, Pengaturan jarak tanam agar sirkulasi udara baik dan kelembaban tidak terlalu tinggi., Penyemprotan ekstrak tanaman antimikroba seperti ekstrak bawang putih atau serai. Untuk penanganan secara kimiawi bisa menggunakan fungisida berbahan aktif mancozeb, klorotalonil, atau tembaga hidroksida, serta disinfeksi benih sebelum tanam menggunakan fungisida sistemik seperti carbendazim.",
+    'Karat Daun': "Penggunaan mulsa organik untuk menekan percikan spora dari tanah, rotasi tanaman dengan tanaman non-inang selama 1–2 musim tanam, penyemprotan larutan kompos (PGPR) atau biofungisida berbasis Trichoderma. Untuk penanganan secara kimiawi bisa menggunakan fungisida berbahan aktif azoksistrobin, propikonazol, atau difenokonazol (Semprot secara berkala (7–10 hari sekali) terutama saat kondisi lembab).",
     'Daun Sehat': "Tanaman sehat. Lanjutkan perawatan rutin.",
-    'Thrips': "Gunakan perangkap kuning, semprot ekstrak daun nimba, atau insektisida seperti abamectin."
+    'Thrips': "Penggunaan perangkap kuning (yellow sticky trap) untuk monitoring dan pengendalian awal, pemanfaatan musuh alami seperti Orius spp. (serangga predator thrips), penyemprotan ekstrak daun nimba (Azadirachta indica) yang bersifat insektisida nabati, pengelolaan kelembaban lahan karena thrips lebih aktif di lingkungan kering. Untuk penanganan secara kimiawi bisa menggunakan insektisida berbahan aktif seperti abamectin, imidacloprid, atau spinetoram(Semprot saat populasi mulai meningkat, fokus pada permukaan bawah daun)"
 }
 
 @app.route('/predict', methods=['POST'])
